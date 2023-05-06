@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+	<title>Paginação</title>
+	<style>
+		.pagination {
+		  display: inline-block;
+		  margin: 10px;
+		}
+
+		.pagination a {
+		  color: black;
+		  float: left;
+		  padding: 8px 16px;
+		  text-decoration: none;
+		  transition: background-color .3s;
+		  border: 1px solid #ddd;
+		}
+
+		.pagination a.active {
+		  background-color: #4CAF50;
+		  color: white;
+		  border: 1px solid #4CAF50;
+		}
+
+		.pagination a:hover:not(.active) {background-color: #ddd;}
+	</style>
+</head>
+<body>
+    <h1>
+        Formulário
+    </h1>
+    <form action="/Buritos">
+        <p>
+            <label for="username">Enter a username:</label>
+            <input id="username" type="text" placeholder="Username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter a password:</label>
+            <input type="password" placeholder="password" id="password" name="password">
+        </p>
+
+    </form>
+	<div class="pagination">
+		<a href="#">&laquo; Voltar</a>
+		<a href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">Avançar &raquo;</a>
+	</div>
+</body>
+</html>
+
+
+</html>
